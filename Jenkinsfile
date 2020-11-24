@@ -2,7 +2,6 @@
                                 cleanWs()
                                 checkout scm
                                  stage("upload result") {
-                                     CURLOPT_SSL_VERIFYPEER=FALSE
 
                                     try {
                                         bat label: '', script: '''curl --location --request POST "https://localhost/reporting-consumer/pluginEndpoint/5fbcdbcb14beca80d2a5d7d1/asocScan" \\
